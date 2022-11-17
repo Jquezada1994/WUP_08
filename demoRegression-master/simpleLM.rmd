@@ -43,3 +43,72 @@ summary.lm(simp2)
 
 
 The adjusted R square is smaller 0.5321 for the headwdth than the neck model which is 0.7476
+
+```{r}
+simp3 <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp3)
+summary.lm(simp3)
+```
+
+
+
+The adjusted R squared for the weight is 0.7423 it is smaller than the neck model which is 0.7476
+
+
+```{r}
+simp4 <- lm(LENGTH~CHEST,data=bears)
+plot(LENGTH~CHEST,data=bears)
+abline(simp4)
+summary.lm(simp4)
+```
+
+
+The adjusted r square is higher than the neck model which  0.7476 the adjusted r square for the chest is 0.7869. 
+
+```{r}
+simp5 <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp5)
+summary.lm(simp5)
+```
+
+
+The adjusted R square on HEADLEN is 0.8434 seems that the adjusted r square is getting bigger
+
+
+```{r}
+simp6 <- lm(LENGTH~as.numeric(SEX),data=bears)
+plot(LENGTH~as.numeric(SEX),data=bears)
+abline(simp6)
+summary.lm(simp6)
+```
+
+
+The adjusted R square is too small to considered being that the number is -0.008373
+
+
+```{r}
+simp7 <- lm(LENGTH~as.numeric(MONTH),data=bears)
+plot(LENGTH~as.numeric(MONTH),data=bears)
+abline(simp7)
+summary.lm(simp7)
+```
+
+
+
+The Rsquare variable is too small to consider in this model it is -0.01153.
+
+```{r}
+simp7 <- lm(LENGTH~as.numeric(MONTH),data=bears)
+plot(LENGTH~as.numeric(MONTH),data=bears)
+abline(simp7)
+summary.lm(simp7)
+```
+
+
+
+
+
+
+
