@@ -112,3 +112,8 @@ summary.lm(simp8)
 The adjusted R square is better than month and sex but it is still a small number which is 0.5073 compared to the neck model number which is 0.7476 for neck
 
 
+Conclusion 
+
+
+The regression models showed that the bigger number is better.So in these examples 0.8434 HEDLEN is the best one you can do a better job explaining the length of the bear using the HEDLEN  variable has a better R square.
+
