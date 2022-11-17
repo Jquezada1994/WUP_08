@@ -100,15 +100,15 @@ summary.lm(simp7)
 The Rsquare variable is too small to consider in this model it is -0.01153.
 
 ```{r}
-simp7 <- lm(LENGTH~as.numeric(MONTH),data=bears)
-plot(LENGTH~as.numeric(MONTH),data=bears)
-abline(simp7)
-summary.lm(simp7)
+simp8 <- lm(LENGTH~as.numeric(AGE),data=bears)
+plot(LENGTH~as.numeric(AGE),data=bears)
+abline(simp8)
+summary.lm(simp8)
 ```
 
 
 
 
-
+The adjusted R square is better than month and sex but it is still a small number which is 0.5073 compared to the neck model number which is 0.7476 for neck
 
 
